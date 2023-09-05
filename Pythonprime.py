@@ -1,6 +1,8 @@
 def prime():
     try:
         if_prime = int(input("Enter a number"))
+    except:
+        if_prime = int(input("Enter a valid number"))
         divisor = 2
         Prime_Condition = True
         while divisor < if_prime:
@@ -16,6 +18,6 @@ def prime():
         else:
             print(if_prime,"is a composite number")
         return(Prime_Condition)
-    except:
+
         if_prime = int(input("Invalid input please try again"))
 print(prime())
